@@ -12,7 +12,7 @@ const App = () => {
   const handleSubmit = () => {
     // Make a cURL request to the Google Sheets API
     const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/1htzgArSyLu9kyl6Ed1SB4v_w5jiAn8oof7icfOzc1l8/values/B${teamNumber}:D${teamNumber}`;
-    const accessToken = 'ya29.a0AfB_byCt7uerR2_Q9SkUvMCj2nl09wsDpC03roOdsLuevQQl_nkxCBw9dTXDCfIaTtS4DyO04msFIqI-31A-h4qkZhAdYEFnUqgk_14YKKWrtkCMXwce44Ss5-YZuh7gM7arUOJv1GTnFCK4qkC_AJPmwa7omdAFVxofaCgYKAcgSAQ8SFQHGX2Mies2zYazvshCEoA6Kd1zRzw0171';
+    const accessToken = 'ya29.a0AfB_byD_Z-zrtzFXkVIv24f9LlEax2lab3mf1thSKFetcjpfQ6gWFw9qB3MGOzyTVe_cqzPx-KtSKgUCwl_tl6S42mUG-nH8Hd964JRP6_jJV9nlZmH2Cz7eGYhhitLt3wHJk_DXAVWMYhGv4qA4Cma_8mcC32MQ5wosaCgYKAcESAQ8SFQHGX2MiFc9qFC8tXn2Kyaazu1MrTA0171';
     fetch(apiUrl, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
